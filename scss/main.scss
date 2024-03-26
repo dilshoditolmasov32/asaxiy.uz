@@ -171,7 +171,10 @@ main {
       -webkit-box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
       box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
       -webkit-transition: all 0.2s ease;
-      transition: all 0.2s ease;
+      transition: all 0.4s ease-in-out;
+      &:hover {
+        transform: scale(1.02);
+      }
       .item-image img {
         width: 142px;
         height: 142px;
@@ -188,6 +191,10 @@ main {
         .xarid-qilish {
           background: #008dff;
           width: 75%;
+          transition: all 0.5s ease-in-out;
+          &:hover {
+            background: linear-gradient(to right, blue, red);
+          }
 
           padding: 8px;
           cursor: pointer;
@@ -232,6 +239,12 @@ main {
         height: 30px;
         cursor: pointer;
         margin: 10px 0 20px;
+
+        transition: 0.4s;
+        &:hover {
+          background-color: #fe720076;
+          color: #fff;
+        }
         a {
           color: #fe7300;
         }
