@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 13px;
+  border-radius: 10px;
+  font-family: Inter;
+  cursor: pointer;
+}
+
+.container {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+a {
+  text-decoration-line: none;
+}
+
+@font-face {
+  font-family: Inter;
+  src: url(../font-family/Inter-Medium.ttf);
+}
+:root {
+  scroll-behavior: smooth;
+}
+
+#backtop-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.backtop {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 99;
+  transition: all 0.5s;
+  opacity: 0;
+}
+.backtop:hover {
+  background: #30e266;
+}
+
+.backtop.active {
+  bottom: 20px;
+  opacity: 1;
+}
+
+header .header-about {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  background: #fff;
+}
+header .header-about .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+header .header-about .nav .items-btn {
+  max-width: 115px;
+  width: 100%;
+  background: #0071cc;
+  color: #fff;
+  outline: none;
+  height: 40px;
+  border: 2px soli #0071cc;
+  font-size: 18px;
+  border: none;
+  border-radius: 12px;
+}
+header .header-about .nav .tarozi,
+header .header-about .nav .tulov,
+header .header-about .nav .kabinet,
+header .header-about .nav .yetkazib-berish,
+header .header-about .nav .savatcha,
+header .header-about .nav .sevimli-item {
+  text-align: center;
+  transition: 0.5s ease-in-out;
+}
+header .header-about .nav .tarozi:hover,
+header .header-about .nav .tulov:hover,
+header .header-about .nav .kabinet:hover,
+header .header-about .nav .yetkazib-berish:hover,
+header .header-about .nav .savatcha:hover,
+header .header-about .nav .sevimli-item:hover {
+  color: #008dff;
+}
+header .header-about .nav #search {
+  padding: 5px 10px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  border: 2px solid #0071cc;
+  height: 40px;
+  width: 385px;
+}
+header .header-about .nav #btn-submit {
+  width: 85px;
+  padding: 6px 12px;
+  background: #0071cc;
+  color: #fff;
+  height: 40px;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid #0071cc;
+  outline: none;
+  margin-left: -5px;
+}
+header .header-about .nav #tulov,
+header .header-about .nav #dastavka,
+header .header-about .nav #savatcha,
+header .header-about .nav #like,
+header .header-about .nav #kabinet,
+header .header-about .nav #sevimli-item {
+  width: 20px;
+  height: 20px;
+}
+header .header-about .more-nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+  box-shadow: 0 0 10px 10px soli red;
+}
+header .header-about .more-nav-links .ramazon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+header .header-about .more-nav-links .ramazon img {
+  width: 30px;
+  height: 30px;
+}
+
+main {
+  background-color: #f4f7fd;
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+main h1 {
+  font-size: 18px;
+  padding-top: 20px;
+  margin-bottom: 20px;
+  color: #262626;
+}
+main .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+main .products .product {
+  max-width: 256px;
+  height: auto;
+  position: relative;
+  padding: 15px;
+  background-color: #fff;
+  outline: 0;
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0px 10px 30px rgba(209, 213, 223, 0.5);
+  transition: all 0.2s ease;
+}
+main .products .product .item-image img {
+  width: 142px;
+  height: 142px;
+}
+main .products .product .item-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+main .products .product .xarid {
+  display: flex;
+  justify-content: space-between;
+}
+main .products .product .xarid .xarid-qilish {
+  background: #008dff;
+  width: 75%;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+main .products .product .xarid p {
+  background: #00bfaf;
+  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+}
+main .products .product .xarid p img {
+  width: 16px;
+  height: 16px;
+}
+main .products .product .item-image {
+  text-align: center;
+}
+main .products .product .item-image {
+  margin-bottom: 10px;
+}
+main .products .product #baholash {
+  width: 87px;
+  margin-bottom: 8px;
+}
+main .products .product .price-product {
+  display: block;
+  font-size: 18px;
+  color: #008dff;
+}
+main .products .product .btn-price {
+  width: 100%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: left;
+  padding-left: 5px;
+  border: 1px solid #fe7300;
+  height: 30px;
+  cursor: pointer;
+  margin: 10px 0 20px;
+}
+main .products .product .btn-price a {
+  color: #fe7300;
+}
+main .products .more-product-about {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+}
+main .products #new {
+  background-color: red;
+  color: #fff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  padding: 4px 10px;
+}/*# sourceMappingURL=main.css.map */
